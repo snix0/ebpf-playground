@@ -1,4 +1,4 @@
-module github.com/snix0/hello
+module github.com/snix0/ebpf-mmap-monitor
 
 go 1.17
 

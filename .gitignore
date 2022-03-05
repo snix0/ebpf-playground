@@ -1,4 +1,4 @@
 vmlinux.h
 *.o
-hello
+mmap_monitor
 .vscode
