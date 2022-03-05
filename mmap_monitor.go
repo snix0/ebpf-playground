@@ -15,8 +15,8 @@ func main() {
 	sig := make(chan os.Signal, 1)
 	signal.Notify(sig, os.Interrupt)
 
-	fmt.Println("Hello")
-	b, err := bpf.NewModuleFromFile("hello.bpf.o")
+	fmt.Println("mmap monitor starting...")
+	b, err := bpf.NewModuleFromFile("mmap_monitor.bpf.o")
 	defer b.Close()
 
 	must(b.BPFLoadObject())
